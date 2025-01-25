@@ -1,0 +1,522 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <!-- ======= Intro Section ======= -->
+  <div class="intro intro-carousel swiper position-relative">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(../static/img/slide-1.jpg)">
+        <div class="overlay overlay-a"></div>
+        <div class="intro-content display-table">
+          <div class="table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="intro-body">
+                    <p class="intro-title-top">
+                      <br> with 200k discount
+                    </p>
+                    <h1 class="intro-title mb-4 ">
+                      <span class="color-b"></span> Regatta
+                    </h1>
+                    <p class="intro-subtitle intro-price">
+                      <a href="#"><span class="price-a">House and lot | 2,200,000 </span></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(../static/img/slide-3.jpg)">
+        <div class="overlay overlay-a"></div>
+        <div class="intro-content display-table">
+          <div class="table-cell">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="intro-body">
+                    <h1 class="intro-title mb-4">
+                      <span class="color-b"></span> HOUSE ONLY
+                      <br> ON BUTUAN
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div><!-- End Intro Section -->
+
+  <main id="main">
+
+    <!-- ======= Services Section ======= -->
+    <section class="section-services section-t8">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Our Services</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card-box-c foo">
+              <div class="card-header-c d-flex">
+                <div class="card-box-ico">
+                  <span class="bi bi-cart"></span>
+                </div>
+                <div class="card-title-c align-self-center">
+                  <h2 class="title-c align-self-center" style="margin-left: 20px;">Lifestyle</h2>
+                </div>
+              </div>
+              <div class="card-body-c">
+                <p class="content-c">
+                  We understand that everyone's idea of a great life looks different. 
+                  That's why we offer a variety of lifestyle services 
+                  to help you make the most of yours.
+                </p>
+              </div>
+              <div class="card-footer-c">
+                <a href="#" class="link-c link-icon">Read more
+                  <span class="bi bi-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-c foo">
+              <div class="card-header-c d-flex">
+                <div class="card-box-ico">
+                  <span class="bi bi-calendar4-week"></span>
+                </div>
+                <div class="card-title-c align-self-center">
+                  <h2 class="title-c align-self-center" style="margin-left: 20px;">Loans</h2>
+                </div>
+              </div>
+              <div class="card-body-c">
+                <p class="content-c">
+                  Life throws unexpected expenses our way sometimes. 
+                  Our loan solutions are here to help. We offer a variety 
+                  of loan options to fit your needs, whether it's consolidating debt, 
+                  financing a home improvement, or funding a dream vacation.
+                </p>
+              </div>
+              <div class="card-footer-c">
+                <a href="#" class="link-c link-icon">Read more
+                  <span class="bi bi-calendar4-week"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-c foo">
+              <div class="card-header-c d-flex">
+                <div class="card-box-ico">
+                  <span class="bi bi-card-checklist"></span>
+                </div>
+                <div class="card-title-c align-self-center">
+                  <h2 class="title-c align-self-center" style="margin-left: 20px;">Sell</h2>
+                </div>
+              </div>
+              <div class="card-body-c">
+                <p class="content-c">
+                  Selling unwanted items can be a hassle. 
+                  Our simplified selling services take the stress out of the process. 
+                  We can help you price your items competitively, 
+                  stage them for attractive online listings, and even handle secure transactions.
+                </p>
+              </div>
+              <div class="card-footer-c">
+                <a href="#" class="link-c link-icon">Read more
+                  <span class="bi bi-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Latest Properties Section ======= -->
+    <section class="section-property section-t8">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Latest Properties</h2>
+              </div>
+              <div class="title-link">
+                <a href="/propertygrid">All Property
+                  <span class="bi bi-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="property-carousel" class="swiper">
+          <div class="swiper-wrapper">
+
+            <div class="carousel-item-b swiper-slide">
+              <div class="card-box-a card-shadow">
+                <div class="img-box-a">
+                  <img src="../static/img/property-6.jpg" alt="" class="img-a img-fluid">
+                </div>
+                <div class="card-overlay">
+                  <div class="card-overlay-a-content">
+                    <div class="card-header-a">
+                      <h2 class="card-title-a">
+                        <a href="/propertysingle"></a>
+                      </h2>
+                    </div>
+                    <div class="card-body-a">
+                      <a href="#" class="link-a">Click here to view
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End carousel item -->
+
+            <div class="carousel-item-b swiper-slide">
+              <div class="card-box-a card-shadow">
+                <div class="img-box-a">
+                  <img src="../static/img/property-3.jpg" alt="" class="img-a img-fluid">
+                </div>
+                <div class="card-overlay">
+                  <div class="card-overlay-a-content">
+                    <div class="card-header-a">
+                      <h2 class="card-title-a">
+                        <a href="/propertysingle"></a>
+                      </h2>
+                    </div>
+                    <div class="card-body-a">
+                      <a href="/propertysingle" class="link-a">Click here to view
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End carousel item -->
+
+            <div class="carousel-item-b swiper-slide">
+              <div class="card-box-a card-shadow">
+                <div class="img-box-a">
+                  <img src="../static/img/property-7.jpg" alt="" class="img-a img-fluid">
+                </div>
+                <div class="card-overlay">
+                  <div class="card-overlay-a-content">
+                    <div class="card-header-a">
+                      <h2 class="card-title-a">
+                        <a href="/propertysingle"></a>
+                      </h2>
+                    </div>
+                    <div class="card-body-a">
+                      <a href="/propertysingle" class="link-a">Click here to view
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End carousel item -->
+
+            <div class="carousel-item-b swiper-slide">
+              <div class="card-box-a card-shadow">
+                <div class="img-box-a">
+                  <img src="../static/img/property-10.jpg" alt="" class="img-a img-fluid">
+                </div>
+                <div class="card-overlay">
+                  <div class="card-overlay-a-content">
+                    <div class="card-header-a">
+                      <h2 class="card-title-a">
+                        <a href="/propertysingle"></a>
+                      </h2>
+                    </div>
+                    <div class="card-body-a">
+                      <a href="/propertysingle" class="link-a">Click here to view
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End carousel item -->
+          </div>
+        </div>
+        <div class="propery-carousel-pagination carousel-pagination"></div>
+
+      </div>
+    </section><!-- End Latest Properties Section -->
+
+    <!-- ======= Agents Section ======= -->
+    <section class="section-agents section-t8">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Best Agents</h2>
+              </div>
+              <div class="title-link">
+                <a href="/agentgrid">All Agents
+                  <span class="bi bi-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card-box-d">
+              <div class="card-img-d">
+                <img src="../static/img/agent-5.jpg" alt="" class="img-d img-fluid">
+              </div>
+              <div class="card-overlay card-overlay-hover">
+                <div class="card-header-d">
+                  <div class="card-title-d align-self-center">
+                    <h3 class="title-d">
+                      <a href="/agentsingle" class="link-two">Fedelyn Floris
+                        <br> Javier</a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="card-body-d">
+                  <p class="content-d color-text-a">
+                    A seasoned real estate professional with 4 years of experience. 
+                    Known for she's dedication to helping clients achieve their real estate goals.
+                  </p>
+                  <div class="info-agents color-a">
+                    <p>
+                      <strong>Phone: </strong> +0946 327 0815
+                    </p>
+                    <p>
+                      <strong>Email: </strong> fedelynflorisjavier@gmail.com
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer-d">
+                  <div class="socials-footer d-flex justify-content-center">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="https://www.facebook.com/fedelyn.darling" class="link-one">
+                          <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-d">
+              <div class="card-img-d">
+                <img src="../static/img/agent-1.jpg" alt="" class="img-d img-fluid">
+              </div>
+              <div class="card-overlay card-overlay-hover">
+                <div class="card-header-d">
+                  <div class="card-title-d align-self-center">
+                    <h3 class="title-d">
+                      <a href="/agentsingle" class="link-two">Adrian Frix
+                        <br> Galindo</a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="card-body-d">
+                  <p class="content-d color-text-a">
+                    With a passion for a real estate agent, he brings a wealth of knowledge
+                     and enthusiasm to the table. committed to providing excellent service to their clients
+                  </p>
+                  <div class="info-agents color-a">
+                    <p>
+                      <strong>Phone: </strong> +0970 537 4960
+                    </p>
+                    <p>
+                      <strong>Email: </strong> adrianfrixgalindo@gmail.com
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer-d">
+                  <div class="socials-footer d-flex justify-content-center">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="https://www.facebook.com/profile.php?id=100009348008767" class="link-one">
+                          <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-d">
+              <div class="card-img-d">
+                <img src="../static/img/agent-4.jpg" alt="" class="img-d img-fluid">
+              </div>
+              <div class="card-overlay card-overlay-hover">
+                <div class="card-header-d">
+                  <div class="card-title-d align-self-center">
+                    <h3 class="title-d">
+                      <a href="/agentsingle" class="link-two">Sophia Gia
+                        <br> Javier</a>
+                    </h3>
+                  </div>
+                </div>
+                <div class="card-body-d">
+                  <p class="content-d color-text-a">
+                    Whether you're a first-time buyer or a seasoned investor, 
+                    she is here to guide you through the real estate process smoothly.
+                  </p>
+                  <div class="info-agents color-a">
+                    <p>
+                      <strong>Phone: </strong> +0963 270 9670
+                    </p>
+                    <p>
+                      <strong>Email: </strong>sophiajavier@gmail.com
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer-d">
+                  <div class="socials-footer d-flex justify-content-center">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <a href="https://www.facebook.com/matthewsalvador12345" class="link-one">
+                          <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="link-one">
+                          <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Agents Section -->
+
+    <!-- ======= Latest News Section ======= -->
+    <section class="section-news section-t8">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title-wrap d-flex justify-content-between">
+              <div class="title-box">
+                <h2 class="title-a">Latest News</h2>
+              </div>
+              <div class="title-link">
+                <a href="/bloggrid">All News
+                  <span class="bi bi-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="news-carousel" class="swiper">
+          <div class="swiper-wrapper">
+
+            <div class="carousel-item-c swiper-slide">
+              <div class="card-box-b card-shadow news-box">
+                <div class="img-box-b">
+                  <img src="../static/img/post-2.jpg" alt="" class="img-b img-fluid">
+                </div>
+                <div class="card-overlay">
+                  <div class="card-header-b">
+                    <div class="card-category-b">
+                      <a href="#" class="category-b">Hiring</a>
+                    </div>
+                    <div class="card-date">
+                      <span class="date-b">18 Sep. 2017</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End carousel item -->
+
+            <div class="carousel-item-c swiper-slide">
+              <div class="card-box-b card-shadow news-box">
+                <div class="img-box-b">
+                  <img src="../static/img/post-5.jpg" alt="" class="img-b img-fluid">
+                </div>
+                <div class="card-overlay">
+                  <div class="card-header-b">
+                    <div class="card-category-b">
+                      <a href="#" class="category-b">Houses</a>
+                    </div>
+                    <div class="card-date">
+                      <span class="date-b">18 Sep. 2017</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End carousel item -->
+
+            <div class="carousel-item-c swiper-slide">
+              <div class="card-box-b card-shadow news-box">
+                <div class="img-box-b">
+                  <img src="../static/img/post-3.jpg" alt="" class="img-b img-fluid">
+                </div>
+                <div class="card-overlay">
+                  <div class="card-header-b">
+                    <div class="card-category-b">
+                      <a href="#" class="category-b">Travel</a>
+                    </div>
+                    <div class="card-title-b">
+                      <h2 class="title-2">
+                        <a href="#">Travel is comming
+                          <br> new</a>
+                      </h2>
+                    </div>
+                    <div class="card-date">
+                      <span class="date-b">18 Sep. 2017</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End carousel item -->
+
+          </div>
+        </div>
+
+        <div class="news-carousel-pagination carousel-pagination"></div>
+      </div>
+    </section><!-- End Latest News Section -->
+
+  </main><!-- End #main -->
+{% endblock content %}

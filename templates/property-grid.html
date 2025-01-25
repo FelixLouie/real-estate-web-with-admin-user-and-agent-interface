@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- ======= Property Grid ======= -->
+    <section class="property-grid grid" style="margin-top: 100px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="grid-option">
+              <form method="get" action="{{ url_for('property_grid') }}">
+                <select class="custom-select" name="filter" id="filter" onchange="this.form.submit()">
+                  <option value="all" {% if request.args.get('filter') == 'all' %}selected{% endif %}>All</option>
+                  <option value="new_to_old" {% if request.args.get('filter') == 'new_to_old' %}selected{% endif %}>New to Old</option>
+                  <option value="for_rent" {% if request.args.get('filter') == 'for_rent' %}selected{% endif %}>For Rent</option>
+                  <option value="for_sale" {% if request.args.get('filter') == 'for_sale' %}selected{% endif %}>For Sale</option>
+                </select>
+              </form>
+            </div>
+          </div>
+
+          {% for property in properties %}
+          <div class="col-md-4">
+            <div class="card-box-a card-shadow">
+              <div class="img-box-a">
+                <img src="{{ url_for('displayimage', property_id=property['property_id']) }}" alt="" class="img-a img-fluid" style="width: 120%; object-fit: cover;">
+              </div>
+              <div class="card-overlay">
+                <div class="card-overlay-a-content">
+                  <div class="card-header-a">
+                    <h2 class="card-title-a">
+                      {{ property.property_name }}
+                    </h2>
+                  </div>
+                  <div class="card-body-a">
+                    <a href="/propertysingle/{{ property.property_id }}" class="link-a">Click here to view
+                      <span class="bi bi-chevron-right"></span>
+                    </a>
+                  </div>
+                  <div class="card-footer-a">
+                    <ul class="card-info d-flex justify-content-around">
+                      <li>
+                        <h4 class="card-info-title">Area</h4>
+                        <span>{{ property.area }}m<sup>2</sup></span>
+                      </li>
+                      <li>
+                        <h4 class="card-info-title">Beds</h4>
+                        <span>{{ property.beds }}</span>
+                      </li>
+                      <li>
+                        <h4 class="card-info-title">Baths</h4>
+                        <span>{{ property.baths }}</span>
+                      </li>
+                      <li>
+                        <h4 class="card-info-title">Garages</h4>
+                        <span>{{ property.garages }}</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+
+        </div>
+      </div>
+    </section><!-- End Property Grid Single-->
+
+  </main><!-- End #main -->
+{% endblock content %}
